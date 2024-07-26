@@ -82,8 +82,8 @@ for index, row in df_customers.iterrows():
     targetting_crew = Crew(
         agents=[profiler, product_specialist, Chief_Promotional_Director],
         tasks=[task1],
-        verbose=2,  # Crew verbose more will let you know what tasks are being worked on, you can set it to 1 or 2 to different logging levels
-        process=Process.sequential  # Sequential process will have tasks executed one after the other and the outcome of the previous one is passed as extra content into this next.
+        verbose=2,  
+        process=Process.sequential 
     )
     targetting_result = targetting_crew.kickoff()
     
